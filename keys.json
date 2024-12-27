@@ -1,0 +1,326 @@
+{
+    "Backquote": {
+        "latin": "`",
+        "latinshift": "~",
+        "language": "",
+        "languageshift": ""
+    },
+    "Digit1": {
+        "latin": "1",
+        "latinshift": "!",
+        "language": "",
+        "languageshift": ""
+    },
+    "Digit2": {
+        "latin": "2",
+        "latinshift": "@",
+        "language": "",
+        "languageshift": ""
+    },
+    "Digit3": {
+        "latin": "3",
+        "latinshift": "#",
+        "language": "Є",
+        "languageshift": "Є"
+    },
+    "Digit4": {
+        "latin": "4",
+        "latinshift": "$",
+        "language": "",
+        "languageshift": ""
+    },
+    "Digit5": {
+        "latin": "5",
+        "latinshift": "%",
+        "language": "",
+        "languageshift": ""
+    },
+    "Digit6": {
+        "latin": "6",
+        "latinshift": "^",
+        "language": "",
+        "languageshift": ""
+    },
+    "Digit7": {
+        "latin": "7",
+        "latinshift": "&",
+        "language": "",
+        "languageshift": ""
+    },
+    "Digit8": {
+        "latin": "8",
+        "latinshift": "*",
+        "language": "",
+        "languageshift": ""
+    },
+    "Digit9": {
+        "latin": "9",
+        "latinshift": "(",
+        "language": "",
+        "languageshift": ""
+    },
+    "Digit0": {
+        "latin": "0",
+        "latinshift": ")",
+        "language": "",
+        "languageshift": ""
+    },
+    "Minus": {
+        "latin": "-",
+        "latinshift": "_",
+        "language": "",
+        "languageshift": ""
+    },
+    "Equal": {
+        "latin": "=",
+        "latinshift": "+",
+        "language": "",
+        "languageshift": ""
+    },
+    "Backspace": {
+        "latin": "BCKSP",
+        "latinshift": "BCKSP",
+        "language": "BCKSP",
+        "languageshift": "BCKSP"
+    },
+    "Tab": {
+        "latin": "TAB",
+        "latinshift": "TAB",
+        "language": "TAB",
+        "languageshift": "TAB"
+    },
+    "KeyQ": {
+        "latin": "ü",
+        "latinshift": "Ü",
+        "language": "ṻ",
+        "languageshift": "Ṻ"
+    },
+    "KeyW": {
+        "latin": "w",
+        "latinshift": "W",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyE": {
+        "latin": "e",
+        "latinshift": "E",
+        "language": "ē",
+        "languageshift": "Ē"
+    },
+    "KeyR": {
+        "latin": "r",
+        "latinshift": "R",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyT": {
+        "latin": "t",
+        "latinshift": "T",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyY": {
+        "latin": "y",
+        "latinshift": "Y",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyU": {
+        "latin": "u",
+        "latinshift": "U",
+        "language": "ū",
+        "languageshift": "Ū"
+    },
+    "KeyI": {
+        "latin": "i",
+        "latinshift": "I",
+        "language": "ī",
+        "languageshift": "Ī"
+    },
+    "KeyO": {
+        "latin": "o",
+        "latinshift": "O",
+        "language": "ō",
+        "languageshift": "Ō"
+    },
+    "KeyP": {
+        "latin": "p",
+        "latinshift": "P",
+        "language": "",
+        "languageshift": ""
+    },
+    "BracketLeft": {
+        "latin": "[",
+        "latinshift": "{",
+        "language": "<",
+        "languageshift": ""
+    },
+    "BracketRight": {
+        "latin": "]",
+        "latinshift": "}",
+        "language": ">",
+        "languageshift": ""
+    },
+    "Backslash": {
+        "latin": "\\",
+        "latinshift": "|",
+        "language": "",
+        "languageshift": ""
+    },
+    "CapsLock": {
+        "latin": "CAPS",
+        "latinshift": "CAPS",
+        "language": "CAPS",
+        "languageshift": "CAPS"
+    },
+    "KeyA": {
+        "latin": "a",
+        "latinshift": "A",
+        "language": "ā",
+        "languageshift": "Ā"
+    },
+    "KeyS": {
+        "latin": "s",
+        "latinshift": "S",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyD": {
+        "latin": "d",
+        "latinshift": "D",
+        "language": "đ",
+        "languageshift": "Đ"
+    },
+    "KeyF": {
+        "latin": "f",
+        "latinshift": "F",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyG": {
+        "latin": "g",
+        "latinshift": "G",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyH": {
+        "latin": "h",
+        "latinshift": "H",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyJ": {
+        "latin": "j",
+        "latinshift": "J",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyK": {
+        "latin": "k",
+        "latinshift": "K",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyL": {
+        "latin": "l",
+        "latinshift": "L",
+        "language": "",
+        "languageshift": ""
+    },
+    "Semicolon": {
+        "latin": ";",
+        "latinshift": ":",
+        "language": "",
+        "languageshift": ""
+    },
+    "Quote": {
+        "latin": "'",
+        "latinshift": "\"",
+        "language": "",
+        "languageshift": ""
+    },
+    "Enter": {
+        "latin": "ENTER",
+        "latinshift": "ENTER",
+        "language": "ENTER",
+        "languageshift": "ENTER"
+    },
+    "ShiftLeft": {
+        "latin": "SHIFT",
+        "latinshift": "SHIFT",
+        "language": "SHIFT",
+        "languageshift": "SHIFT"
+    },
+    "KeyZ": {
+        "latin": "LNG",
+        "latinshift": "LNG",
+        "language": "NXT",
+        "languageshift": "NXT"
+    },
+    "KeyX": {
+        "latin": "z",
+        "latinshift": "Z",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyC": {
+        "latin": "c",
+        "latinshift": "C",
+        "language": "Є",
+        "languageshift": "Є"
+    },
+    "KeyV": {
+        "latin": "v",
+        "latinshift": "V",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyB": {
+        "latin": "b",
+        "latinshift": "B",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyN": {
+        "latin": "n",
+        "latinshift": "N",
+        "language": "",
+        "languageshift": ""
+    },
+    "KeyM": {
+        "latin": "m",
+        "latinshift": "M",
+        "language": "",
+        "languageshift": ""
+    },
+    "Comma": {
+        "latin": ",",
+        "latinshift": "/",
+        "language": "<",
+        "languageshift": ""
+    },
+    "Period": {
+        "latin": ".",
+        "latinshift": "?",
+        "language": ">",
+        "languageshift": ""
+    },
+    "Slash": {
+        "latin": "LNG",
+        "latinshift": "LNG",
+        "language": "NXT",
+        "languageshift": "NXT"
+    },
+    "ShiftRight": {
+        "latin": "SHIFT",
+        "latinshift": "SHIFT",
+        "language": "SHIFT",
+        "languageshift": "SHIFT"
+    },
+    "Space": {
+        "latin": "SPACE",
+        "latinshift": "SPACE",
+        "language": "SPACE",
+        "languageshift": "SPACE"
+    }
+}
