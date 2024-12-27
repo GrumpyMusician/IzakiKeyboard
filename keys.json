@@ -20,14 +20,14 @@
     "Digit3": {
         "latin": "3",
         "latinshift": "#",
-        "language": "Є",
-        "languageshift": "Є"
+        "language": "",
+        "languageshift": ""
     },
     "Digit4": {
         "latin": "4",
         "latinshift": "$",
-        "language": "",
-        "languageshift": ""
+        "language": "Є",
+        "languageshift": "Є"
     },
     "Digit5": {
         "latin": "5",
@@ -92,8 +92,8 @@
     "KeyQ": {
         "latin": "ü",
         "latinshift": "Ü",
-        "language": "ṻ",
-        "languageshift": "Ṻ"
+        "language": "ǖ",
+        "languageshift": "Ǖ"
     },
     "KeyW": {
         "latin": "w",
