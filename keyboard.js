@@ -15,6 +15,8 @@ const baimode = document.getElementById("baistat");
 
 const textbox = document.getElementById("textbox");
 
+const doublerule = ['ü', 'Ü', 'e', 'E', 'a', 'A', 'd', 'D', 'u', 'U', 'i', 'I', 'o', 'O', '[', ']'];
+
 keyUpdates();
 
 latinmode.setAttribute("fill", "#86A788");
@@ -76,7 +78,7 @@ function textboxupdate(event) {
                 }
             }
 
-            if (chartoadd === textbox.value.charAt(cursorPos - 1)){
+            if (chartoadd === textbox.value.charAt(cursorPos - 1) && doublerule.includes(chartoadd)){
                 if (!upper){
                     chartoadd = data[event.code].language;
                 } else {
@@ -98,24 +100,34 @@ function keyUpdates(){
             if (data.hasOwnProperty(key)) {
                 //document.getElementById(key).nextElementSibling.textContent = data[key].latin;
 
+                let char;
                 let upper = ((!shift && caps) || (shift && !caps));
                 let lng = (lngleft || lngright)
                 
                 if (!upper){
                     if (!lng){
-                        document.getElementById(key).nextElementSibling.textContent = data[key].latin;
+                        char = data[key].latin
+                        document.getElementById(key).nextElementSibling.textContent = char;
                     }
                     else {
-                        document.getElementById(key).nextElementSibling.textContent = data[key].language;
+                        char = data[key].language
+                        document.getElementById(key).nextElementSibling.textContent = char;
                     }
                 }
                 else {
                     if (!lng){
-                        document.getElementById(key).nextElementSibling.textContent = data[key].latinshift;
+                        char = data[key].latinshift
+                        document.getElementById(key).nextElementSibling.textContent = char;
                     }
                     else {
-                        document.getElementById(key).nextElementSibling.textContent = data[key].languageshift;
+                        char = data[key].languageshift
+                        document.getElementById(key).nextElementSibling.textContent = char;
                     }
+                }
+                if (doublerule.includes(char)){
+                    document.getElementById(key).nextElementSibling.setAttribute('fill', '#FDFD96');
+                } else {
+                    document.getElementById(key).nextElementSibling.setAttribute('fill', 'white');
                 }
             }
         }
