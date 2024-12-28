@@ -1,326 +1,380 @@
 {
     "Backquote": {
+        "outputwith": true,
         "latin": "`",
         "latinshift": "~",
         "language": "",
         "languageshift": ""
     },
     "Digit1": {
+        "outputwith": true,
         "latin": "1",
         "latinshift": "!",
         "language": "",
         "languageshift": ""
     },
     "Digit2": {
+        "outputwith": true,
         "latin": "2",
         "latinshift": "@",
         "language": "",
         "languageshift": ""
     },
     "Digit3": {
+        "outputwith": true,
         "latin": "3",
         "latinshift": "#",
         "language": "",
         "languageshift": ""
     },
     "Digit4": {
+        "outputwith": true,
         "latin": "4",
         "latinshift": "$",
         "language": "Є",
         "languageshift": "Є"
     },
     "Digit5": {
+        "outputwith": true,
         "latin": "5",
         "latinshift": "%",
         "language": "",
         "languageshift": ""
     },
     "Digit6": {
+        "outputwith": true,
         "latin": "6",
         "latinshift": "^",
         "language": "",
         "languageshift": ""
     },
     "Digit7": {
+        "outputwith": true,
         "latin": "7",
         "latinshift": "&",
         "language": "",
         "languageshift": ""
     },
     "Digit8": {
+        "outputwith": true,
         "latin": "8",
         "latinshift": "*",
         "language": "",
         "languageshift": ""
     },
     "Digit9": {
+        "outputwith": true,
         "latin": "9",
         "latinshift": "(",
         "language": "",
         "languageshift": ""
     },
     "Digit0": {
+        "outputwith": true,
         "latin": "0",
         "latinshift": ")",
         "language": "",
         "languageshift": ""
     },
     "Minus": {
+        "outputwith": true,
         "latin": "-",
         "latinshift": "_",
         "language": "",
         "languageshift": ""
     },
     "Equal": {
+        "outputwith": true,
         "latin": "=",
         "latinshift": "+",
         "language": "",
         "languageshift": ""
     },
     "Backspace": {
-        "latin": "BCKSP",
-        "latinshift": "BCKSP",
-        "language": "BCKSP",
-        "languageshift": "BCKSP"
+        "outputwith": false,
+        "latin": "BKSP",
+        "latinshift": "BKSP",
+        "language": "BKSP",
+        "languageshift": "BKSP"
     },
     "Tab": {
+        "outputwith": false,
         "latin": "TAB",
         "latinshift": "TAB",
         "language": "TAB",
         "languageshift": "TAB"
     },
     "KeyQ": {
+        "outputwith": true,
         "latin": "ü",
         "latinshift": "Ü",
         "language": "ǖ",
         "languageshift": "Ǖ"
     },
     "KeyW": {
+        "outputwith": true,
         "latin": "w",
         "latinshift": "W",
         "language": "",
         "languageshift": ""
     },
     "KeyE": {
+        "outputwith": true,
         "latin": "e",
         "latinshift": "E",
         "language": "ē",
         "languageshift": "Ē"
     },
     "KeyR": {
+        "outputwith": true,
         "latin": "r",
         "latinshift": "R",
         "language": "",
         "languageshift": ""
     },
     "KeyT": {
+        "outputwith": true,
         "latin": "t",
         "latinshift": "T",
         "language": "",
         "languageshift": ""
     },
     "KeyY": {
+        "outputwith": true,
         "latin": "y",
         "latinshift": "Y",
         "language": "",
         "languageshift": ""
     },
     "KeyU": {
+        "outputwith": true,
         "latin": "u",
         "latinshift": "U",
         "language": "ū",
         "languageshift": "Ū"
     },
     "KeyI": {
+        "outputwith": true,
         "latin": "i",
         "latinshift": "I",
         "language": "ī",
         "languageshift": "Ī"
     },
     "KeyO": {
+        "outputwith": true,
         "latin": "o",
         "latinshift": "O",
         "language": "ō",
         "languageshift": "Ō"
     },
     "KeyP": {
+        "outputwith": true,
         "latin": "p",
         "latinshift": "P",
         "language": "",
         "languageshift": ""
     },
     "BracketLeft": {
+        "outputwith": true,
         "latin": "[",
         "latinshift": "{",
         "language": "<",
         "languageshift": ""
     },
     "BracketRight": {
+        "outputwith": true,
         "latin": "]",
         "latinshift": "}",
         "language": ">",
         "languageshift": ""
     },
     "Backslash": {
+        "outputwith": true,
         "latin": "\\",
         "latinshift": "|",
         "language": "",
         "languageshift": ""
     },
     "CapsLock": {
+        "outputwith": false,
         "latin": "CAPS",
         "latinshift": "CAPS",
         "language": "CAPS",
         "languageshift": "CAPS"
     },
     "KeyA": {
+        "outputwith": true,
         "latin": "a",
         "latinshift": "A",
         "language": "ā",
         "languageshift": "Ā"
     },
     "KeyS": {
+        "outputwith": true,
         "latin": "s",
         "latinshift": "S",
         "language": "",
         "languageshift": ""
     },
     "KeyD": {
+        "outputwith": true,
         "latin": "d",
         "latinshift": "D",
         "language": "đ",
         "languageshift": "Đ"
     },
     "KeyF": {
+        "outputwith": true,
         "latin": "f",
         "latinshift": "F",
         "language": "",
         "languageshift": ""
     },
     "KeyG": {
+        "outputwith": true,
         "latin": "g",
         "latinshift": "G",
         "language": "",
         "languageshift": ""
     },
     "KeyH": {
+        "outputwith": true,
         "latin": "h",
         "latinshift": "H",
         "language": "",
         "languageshift": ""
     },
     "KeyJ": {
+        "outputwith": true,
         "latin": "j",
         "latinshift": "J",
         "language": "",
         "languageshift": ""
     },
     "KeyK": {
+        "outputwith": true,
         "latin": "k",
         "latinshift": "K",
         "language": "",
         "languageshift": ""
     },
     "KeyL": {
+        "outputwith": true,
         "latin": "l",
         "latinshift": "L",
         "language": "",
         "languageshift": ""
     },
     "Semicolon": {
+        "outputwith": true,
         "latin": ";",
         "latinshift": ":",
         "language": "",
         "languageshift": ""
     },
     "Quote": {
+        "outputwith": true,
         "latin": "'",
         "latinshift": "\"",
         "language": "",
         "languageshift": ""
     },
     "Enter": {
+        "outputwith": false,
         "latin": "ENTER",
         "latinshift": "ENTER",
         "language": "ENTER",
         "languageshift": "ENTER"
     },
     "ShiftLeft": {
+        "outputwith": false,
         "latin": "SHIFT",
         "latinshift": "SHIFT",
         "language": "SHIFT",
         "languageshift": "SHIFT"
     },
     "KeyZ": {
+        "outputwith": false,
         "latin": "LNG",
         "latinshift": "LNG",
         "language": "NXT",
         "languageshift": "NXT"
     },
     "KeyX": {
+        "outputwith": true,
         "latin": "z",
         "latinshift": "Z",
         "language": "",
         "languageshift": ""
     },
     "KeyC": {
+        "outputwith": true,
         "latin": "c",
         "latinshift": "C",
         "language": "Є",
         "languageshift": "Є"
     },
     "KeyV": {
+        "outputwith": true,
         "latin": "v",
         "latinshift": "V",
         "language": "",
         "languageshift": ""
     },
     "KeyB": {
+        "outputwith": true,
         "latin": "b",
         "latinshift": "B",
         "language": "",
         "languageshift": ""
     },
     "KeyN": {
+        "outputwith": true,
         "latin": "n",
         "latinshift": "N",
         "language": "",
         "languageshift": ""
     },
     "KeyM": {
+        "outputwith": true,
         "latin": "m",
         "latinshift": "M",
         "language": "",
         "languageshift": ""
     },
     "Comma": {
+        "outputwith": true,
         "latin": ",",
         "latinshift": "/",
         "language": "<",
         "languageshift": ""
     },
     "Period": {
+        "outputwith": true,
         "latin": ".",
         "latinshift": "?",
         "language": ">",
         "languageshift": ""
     },
     "Slash": {
+        "outputwith": false,
         "latin": "LNG",
         "latinshift": "LNG",
         "language": "NXT",
         "languageshift": "NXT"
     },
     "ShiftRight": {
+        "outputwith": false,
         "latin": "SHIFT",
         "latinshift": "SHIFT",
         "language": "SHIFT",
         "languageshift": "SHIFT"
     },
     "Space": {
-        "latin": "SPACE",
-        "latinshift": "SPACE",
-        "language": "SPACE",
-        "languageshift": "SPACE"
+        "outputwith": true,
+        "latin": " ",
+        "latinshift": " ",
+        "language": " ",
+        "languageshift": " "
     }
 }
