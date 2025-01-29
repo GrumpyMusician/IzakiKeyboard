@@ -23,14 +23,12 @@ fetch('keys.json')
     .then(response => response.json())
     .then(data => {
         keyData = data;
+        keyUpdates(); // Ensure keys display text after data is loaded
+        latinmode.setAttribute("fill", "#86A788");
     })
     .catch(error => {
         console.error('Error loading JSON file:', error);
     });
-
-keyUpdates();
-
-latinmode.setAttribute("fill", "#86A788");
 
 const debounce = (callback, delay) => {
     let debounceTimer;
