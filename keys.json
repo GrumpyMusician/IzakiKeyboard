@@ -3,6 +3,7 @@
         "outputwith": true,
         "latin": "`",
         "latinshift": "~",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -10,6 +11,7 @@
         "outputwith": true,
         "latin": "1",
         "latinshift": "!",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -17,6 +19,7 @@
         "outputwith": true,
         "latin": "2",
         "latinshift": "@",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -24,6 +27,7 @@
         "outputwith": true,
         "latin": "3",
         "latinshift": "#",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -31,6 +35,7 @@
         "outputwith": true,
         "latin": "4",
         "latinshift": "$",
+        "askaoza": null,
         "language": "Є",
         "languageshift": "Є"
     },
@@ -38,6 +43,7 @@
         "outputwith": true,
         "latin": "5",
         "latinshift": "%",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -45,6 +51,7 @@
         "outputwith": true,
         "latin": "6",
         "latinshift": "^",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -52,6 +59,7 @@
         "outputwith": true,
         "latin": "7",
         "latinshift": "&",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -59,6 +67,7 @@
         "outputwith": true,
         "latin": "8",
         "latinshift": "*",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -66,6 +75,7 @@
         "outputwith": true,
         "latin": "9",
         "latinshift": "(",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -73,6 +83,7 @@
         "outputwith": true,
         "latin": "0",
         "latinshift": ")",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -80,6 +91,7 @@
         "outputwith": true,
         "latin": "-",
         "latinshift": "_",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -87,6 +99,7 @@
         "outputwith": true,
         "latin": "=",
         "latinshift": "+",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -94,6 +107,7 @@
         "outputwith": false,
         "latin": "BKSP",
         "latinshift": "BKSP",
+        "askaoza": null,
         "language": "BKSP",
         "languageshift": "BKSP"
     },
@@ -101,6 +115,7 @@
         "outputwith": false,
         "latin": "TAB",
         "latinshift": "TAB",
+        "askaoza": null,
         "language": "TAB",
         "languageshift": "TAB"
     },
@@ -108,6 +123,7 @@
         "outputwith": true,
         "latin": "ü",
         "latinshift": "Ü",
+        "askaoza": "ૈ",
         "language": "ǖ",
         "languageshift": "Ǖ"
     },
@@ -115,6 +131,7 @@
         "outputwith": true,
         "latin": "w",
         "latinshift": "W",
+        "askaoza": "િ",
         "language": "",
         "languageshift": ""
     },
@@ -122,6 +139,7 @@
         "outputwith": true,
         "latin": "e",
         "latinshift": "E",
+        "askaoza": "ૅ",
         "language": "ē",
         "languageshift": "Ē"
     },
@@ -129,6 +147,7 @@
         "outputwith": true,
         "latin": "r",
         "latinshift": "R",
+        "askaoza": "દ",
         "language": "",
         "languageshift": ""
     },
@@ -136,6 +155,7 @@
         "outputwith": true,
         "latin": "t",
         "latinshift": "T",
+        "askaoza": "ઠ",
         "language": "",
         "languageshift": ""
     },
@@ -143,6 +163,7 @@
         "outputwith": true,
         "latin": "y",
         "latinshift": "Y",
+        "askaoza": "ો",
         "language": "",
         "languageshift": ""
     },
@@ -150,6 +171,7 @@
         "outputwith": true,
         "latin": "u",
         "latinshift": "U",
+        "askaoza": "ે",
         "language": "ū",
         "languageshift": "Ū"
     },
@@ -157,6 +179,7 @@
         "outputwith": true,
         "latin": "i",
         "latinshift": "I",
+        "askaoza": "ા",
         "language": "ī",
         "languageshift": "Ī"
     },
@@ -164,6 +187,7 @@
         "outputwith": true,
         "latin": "o",
         "latinshift": "O",
+        "askaoza": "૾",
         "language": "ō",
         "languageshift": "Ō"
     },
@@ -171,6 +195,7 @@
         "outputwith": true,
         "latin": "p",
         "latinshift": "P",
+        "askaoza": "ર",
         "language": "",
         "languageshift": ""
     },
@@ -178,6 +203,7 @@
         "outputwith": true,
         "latin": "[",
         "latinshift": "{",
+        "askaoza": null,
         "language": "<",
         "languageshift": ""
     },
@@ -185,6 +211,7 @@
         "outputwith": true,
         "latin": "]",
         "latinshift": "}",
+        "askaoza": null,
         "language": ">",
         "languageshift": ""
     },
@@ -192,6 +219,7 @@
         "outputwith": true,
         "latin": "\\",
         "latinshift": "|",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -199,6 +227,7 @@
         "outputwith": false,
         "latin": "CAPS",
         "latinshift": "CAPS",
+        "askaoza": null,
         "language": "CAPS",
         "languageshift": "CAPS"
     },
@@ -206,6 +235,7 @@
         "outputwith": true,
         "latin": "a",
         "latinshift": "A",
+        "askaoza": "૩ૃ",
         "language": "ā",
         "languageshift": "Ā"
     },
@@ -213,6 +243,7 @@
         "outputwith": true,
         "latin": "s",
         "latinshift": "S",
+        "askaoza": "ટ",
         "language": "",
         "languageshift": ""
     },
@@ -220,6 +251,7 @@
         "outputwith": true,
         "latin": "d",
         "latinshift": "D",
+        "askaoza": "ઠૃ",
         "language": "đ",
         "languageshift": "Đ"
     },
@@ -227,6 +259,7 @@
         "outputwith": true,
         "latin": "f",
         "latinshift": "F",
+        "askaoza": "ળૃ",
         "language": "",
         "languageshift": ""
     },
@@ -234,6 +267,7 @@
         "outputwith": true,
         "latin": "g",
         "latinshift": "G",
+        "askaoza": "ડૃ",
         "language": "",
         "languageshift": ""
     },
@@ -241,6 +275,7 @@
         "outputwith": true,
         "latin": "h",
         "latinshift": "H",
+        "askaoza": "ત",
         "language": "",
         "languageshift": ""
     },
@@ -248,6 +283,7 @@
         "outputwith": true,
         "latin": "j",
         "latinshift": "J",
+        "askaoza": "મૃ",
         "language": "",
         "languageshift": ""
     },
@@ -255,6 +291,7 @@
         "outputwith": true,
         "latin": "k",
         "latinshift": "K",
+        "askaoza": "ડ",
         "language": "",
         "languageshift": ""
     },
@@ -262,6 +299,7 @@
         "outputwith": true,
         "latin": "l",
         "latinshift": "L",
+        "askaoza": "ધ",
         "language": "",
         "languageshift": ""
     },
@@ -269,6 +307,7 @@
         "outputwith": true,
         "latin": ";",
         "latinshift": ":",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -276,6 +315,7 @@
         "outputwith": true,
         "latin": "'",
         "latinshift": "\"",
+        "askaoza": null,
         "language": "",
         "languageshift": ""
     },
@@ -283,6 +323,7 @@
         "outputwith": false,
         "latin": "ENTER",
         "latinshift": "ENTER",
+        "askaoza": null,
         "language": "ENTER",
         "languageshift": "ENTER"
     },
@@ -290,6 +331,7 @@
         "outputwith": false,
         "latin": "SHIFT",
         "latinshift": "SHIFT",
+        "askaoza": null,
         "language": "SHIFT",
         "languageshift": "SHIFT"
     },
@@ -297,6 +339,7 @@
         "outputwith": false,
         "latin": "LNG",
         "latinshift": "LNG",
+        "askaoza": null,
         "language": "NXT",
         "languageshift": "NXT"
     },
@@ -304,6 +347,7 @@
         "outputwith": true,
         "latin": "z",
         "latinshift": "Z",
+        "askaoza": "ટૃ",
         "language": "",
         "languageshift": ""
     },
@@ -311,6 +355,7 @@
         "outputwith": true,
         "latin": "c",
         "latinshift": "C",
+        "askaoza": "મ",
         "language": "Є",
         "languageshift": "Є"
     },
@@ -318,6 +363,7 @@
         "outputwith": true,
         "latin": "v",
         "latinshift": "V",
+        "askaoza": "ળૃ",
         "language": "",
         "languageshift": ""
     },
@@ -325,6 +371,7 @@
         "outputwith": true,
         "latin": "b",
         "latinshift": "B",
+        "askaoza": "રૃ",
         "language": "",
         "languageshift": ""
     },
@@ -332,6 +379,7 @@
         "outputwith": true,
         "latin": "n",
         "latinshift": "N",
+        "askaoza": "પ",
         "language": "",
         "languageshift": ""
     },
@@ -339,6 +387,7 @@
         "outputwith": true,
         "latin": "m",
         "latinshift": "M",
+        "askaoza": "ઇ",
         "language": "",
         "languageshift": ""
     },
@@ -346,6 +395,7 @@
         "outputwith": true,
         "latin": ",",
         "latinshift": "/",
+        "askaoza": null,
         "language": "<",
         "languageshift": ""
     },
@@ -353,6 +403,7 @@
         "outputwith": true,
         "latin": ".",
         "latinshift": "?",
+        "askaoza": null,
         "language": ">",
         "languageshift": ""
     },
@@ -360,6 +411,7 @@
         "outputwith": false,
         "latin": "LNG",
         "latinshift": "LNG",
+        "askaoza": null,
         "language": "NXT",
         "languageshift": "NXT"
     },
@@ -367,6 +419,7 @@
         "outputwith": false,
         "latin": "SHIFT",
         "latinshift": "SHIFT",
+        "askaoza": null,
         "language": "SHIFT",
         "languageshift": "SHIFT"
     },
@@ -374,6 +427,7 @@
         "outputwith": true,
         "latin": " ",
         "latinshift": " ",
+        "askaoza": null,
         "language": " ",
         "languageshift": " "
     }

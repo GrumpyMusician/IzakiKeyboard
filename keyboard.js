@@ -4,7 +4,7 @@ let caps = false;
 let lngleft = false;
 let lngright = false;
 
-let mode = false;
+let mode = false; // latin mode = false, askaoza mode when no caps and no shift and mode= true, bai mode when caps and shift and mode = true
 
 const capslock = document.getElementById("capsstat");
 const shiftkey = document.getElementById("shiftstat");
@@ -23,7 +23,7 @@ fetch('keys.json')
     .then(response => response.json())
     .then(data => {
         keyData = data;
-        keyUpdates(); // Ensure keys display text after data is loaded
+        keyUpdates();
         latinmode.setAttribute("fill", "#86A788");
     })
     .catch(error => {
@@ -70,6 +70,10 @@ function textboxupdate(event) {
     let textLeft = textbox.value.slice(0, cursorPos);
     let textRight = textbox.value.slice(cursorPos);
 
+    if ((lngleft == true) && (lngright == true)){
+        mode = !mode;
+    }
+
     if (keyData[event.code].outputwith === false) {
         if (event.code === "Backspace" && cursorPos > 0) {
             textLeft = textLeft.slice(0, -1);
@@ -84,13 +88,18 @@ function textboxupdate(event) {
         return;
     }
 
-    chartoadd = upper
-        ? lng
-            ? keyData[event.code].languageshift
-            : keyData[event.code].latinshift
-        : lng
-        ? keyData[event.code].language
-        : keyData[event.code].latin;
+    if (mode && keyData[event.code].askaoza !== null) {
+        chartoadd = keyData[event.code].askaoza;
+    }
+    else {
+        chartoadd = upper
+            ? lng
+                ? keyData[event.code].languageshift
+                : keyData[event.code].latinshift
+            : lng
+            ? keyData[event.code].language
+            : keyData[event.code].latin;
+    }
 
     if (
         chartoadd === textbox.value.charAt(cursorPos - 1) &&
@@ -115,19 +124,27 @@ function keyUpdates() {
             let upper = (shift && !caps) || (!shift && caps);
             let lng = lngleft || lngright;
 
-            if (!upper) {
-                char = !lng ? keyData[key].latin : keyData[key].language;
-            } else {
-                char = !lng ? keyData[key].latinshift : keyData[key].languageshift;
+            if (mode && keyData[key].askaoza !== null) {
+                char = keyData[key].askaoza;
+                document.getElementById(key).nextElementSibling.textContent = char;
+            }
+            else {
+                if (!upper) {
+                    char = !lng ? keyData[key].latin : keyData[key].language;
+                } else {
+                    char = !lng ? keyData[key].latinshift : keyData[key].languageshift;
+                }
+
+                document.getElementById(key).nextElementSibling.textContent = char;
+
+                if (doublerule.includes(char)) {
+                    document.getElementById(key).nextElementSibling.setAttribute('fill', '#FDFD96');
+                } else {
+                    document.getElementById(key).nextElementSibling.setAttribute('fill', 'white');
+                }
             }
 
-            document.getElementById(key).nextElementSibling.textContent = char;
-
-            if (doublerule.includes(char)) {
-                document.getElementById(key).nextElementSibling.setAttribute('fill', '#FDFD96');
-            } else {
-                document.getElementById(key).nextElementSibling.setAttribute('fill', 'white');
-            }
+            //console.log("mode:" + mode + ", " + keyData[key].askaoza);
         }
     }
 }
