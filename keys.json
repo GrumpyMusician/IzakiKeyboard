@@ -3,7 +3,7 @@
         "outputwith": true,
         "latin": "`",
         "latinshift": "~",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -11,7 +11,7 @@
         "outputwith": true,
         "latin": "1",
         "latinshift": "!",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -19,7 +19,7 @@
         "outputwith": true,
         "latin": "2",
         "latinshift": "@",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -27,7 +27,7 @@
         "outputwith": true,
         "latin": "3",
         "latinshift": "#",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -35,7 +35,7 @@
         "outputwith": true,
         "latin": "4",
         "latinshift": "$",
-        "askaoza": null,
+        "askaoza": false,
         "language": "Є",
         "languageshift": "Є"
     },
@@ -43,7 +43,7 @@
         "outputwith": true,
         "latin": "5",
         "latinshift": "%",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -51,7 +51,7 @@
         "outputwith": true,
         "latin": "6",
         "latinshift": "^",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -59,7 +59,7 @@
         "outputwith": true,
         "latin": "7",
         "latinshift": "&",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -67,7 +67,7 @@
         "outputwith": true,
         "latin": "8",
         "latinshift": "*",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -75,7 +75,7 @@
         "outputwith": true,
         "latin": "9",
         "latinshift": "(",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -83,7 +83,7 @@
         "outputwith": true,
         "latin": "0",
         "latinshift": ")",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -91,7 +91,7 @@
         "outputwith": true,
         "latin": "-",
         "latinshift": "_",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -99,7 +99,7 @@
         "outputwith": true,
         "latin": "=",
         "latinshift": "+",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -107,7 +107,7 @@
         "outputwith": false,
         "latin": "BKSP",
         "latinshift": "BKSP",
-        "askaoza": null,
+        "askaoza": false,
         "language": "BKSP",
         "languageshift": "BKSP"
     },
@@ -115,7 +115,7 @@
         "outputwith": false,
         "latin": "TAB",
         "latinshift": "TAB",
-        "askaoza": null,
+        "askaoza": false,
         "language": "TAB",
         "languageshift": "TAB"
     },
@@ -123,7 +123,7 @@
         "outputwith": true,
         "latin": "ü",
         "latinshift": "Ü",
-        "askaoza": "ૈ",
+        "askaoza": true,
         "language": "ǖ",
         "languageshift": "Ǖ"
     },
@@ -131,7 +131,7 @@
         "outputwith": true,
         "latin": "w",
         "latinshift": "W",
-        "askaoza": "િ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -139,7 +139,7 @@
         "outputwith": true,
         "latin": "e",
         "latinshift": "E",
-        "askaoza": "ૅ",
+        "askaoza": true,
         "language": "ē",
         "languageshift": "Ē"
     },
@@ -147,7 +147,7 @@
         "outputwith": true,
         "latin": "r",
         "latinshift": "R",
-        "askaoza": "દ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -155,7 +155,7 @@
         "outputwith": true,
         "latin": "t",
         "latinshift": "T",
-        "askaoza": "ઠ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -163,7 +163,7 @@
         "outputwith": true,
         "latin": "y",
         "latinshift": "Y",
-        "askaoza": "ો",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -171,7 +171,7 @@
         "outputwith": true,
         "latin": "u",
         "latinshift": "U",
-        "askaoza": "ે",
+        "askaoza": true,
         "language": "ū",
         "languageshift": "Ū"
     },
@@ -179,7 +179,7 @@
         "outputwith": true,
         "latin": "i",
         "latinshift": "I",
-        "askaoza": "ા",
+        "askaoza": true,
         "language": "ī",
         "languageshift": "Ī"
     },
@@ -187,7 +187,7 @@
         "outputwith": true,
         "latin": "o",
         "latinshift": "O",
-        "askaoza": "૾",
+        "askaoza": true,
         "language": "ō",
         "languageshift": "Ō"
     },
@@ -195,7 +195,7 @@
         "outputwith": true,
         "latin": "p",
         "latinshift": "P",
-        "askaoza": "ર",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -203,7 +203,7 @@
         "outputwith": true,
         "latin": "[",
         "latinshift": "{",
-        "askaoza": null,
+        "askaoza": false,
         "language": "<",
         "languageshift": ""
     },
@@ -211,7 +211,7 @@
         "outputwith": true,
         "latin": "]",
         "latinshift": "}",
-        "askaoza": null,
+        "askaoza": false,
         "language": ">",
         "languageshift": ""
     },
@@ -219,7 +219,7 @@
         "outputwith": true,
         "latin": "\\",
         "latinshift": "|",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -227,7 +227,7 @@
         "outputwith": false,
         "latin": "CAPS",
         "latinshift": "CAPS",
-        "askaoza": null,
+        "askaoza": false,
         "language": "CAPS",
         "languageshift": "CAPS"
     },
@@ -235,7 +235,7 @@
         "outputwith": true,
         "latin": "a",
         "latinshift": "A",
-        "askaoza": "૩ૃ",
+        "askaoza": true,
         "language": "ā",
         "languageshift": "Ā"
     },
@@ -243,7 +243,7 @@
         "outputwith": true,
         "latin": "s",
         "latinshift": "S",
-        "askaoza": "ટ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -251,7 +251,7 @@
         "outputwith": true,
         "latin": "d",
         "latinshift": "D",
-        "askaoza": "ઠૃ",
+        "askaoza": true,
         "language": "đ",
         "languageshift": "Đ"
     },
@@ -259,7 +259,7 @@
         "outputwith": true,
         "latin": "f",
         "latinshift": "F",
-        "askaoza": "ળૃ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -267,7 +267,7 @@
         "outputwith": true,
         "latin": "g",
         "latinshift": "G",
-        "askaoza": "ડૃ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -275,7 +275,7 @@
         "outputwith": true,
         "latin": "h",
         "latinshift": "H",
-        "askaoza": "ત",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -283,7 +283,7 @@
         "outputwith": true,
         "latin": "j",
         "latinshift": "J",
-        "askaoza": "મૃ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -291,7 +291,7 @@
         "outputwith": true,
         "latin": "k",
         "latinshift": "K",
-        "askaoza": "ડ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -299,7 +299,7 @@
         "outputwith": true,
         "latin": "l",
         "latinshift": "L",
-        "askaoza": "ધ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -307,7 +307,7 @@
         "outputwith": true,
         "latin": ";",
         "latinshift": ":",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -315,7 +315,7 @@
         "outputwith": true,
         "latin": "'",
         "latinshift": "\"",
-        "askaoza": null,
+        "askaoza": false,
         "language": "",
         "languageshift": ""
     },
@@ -323,7 +323,7 @@
         "outputwith": false,
         "latin": "ENTER",
         "latinshift": "ENTER",
-        "askaoza": null,
+        "askaoza": false,
         "language": "ENTER",
         "languageshift": "ENTER"
     },
@@ -331,7 +331,7 @@
         "outputwith": false,
         "latin": "SHIFT",
         "latinshift": "SHIFT",
-        "askaoza": null,
+        "askaoza": false,
         "language": "SHIFT",
         "languageshift": "SHIFT"
     },
@@ -339,7 +339,7 @@
         "outputwith": false,
         "latin": "LNG",
         "latinshift": "LNG",
-        "askaoza": null,
+        "askaoza": false,
         "language": "NXT",
         "languageshift": "NXT"
     },
@@ -347,7 +347,7 @@
         "outputwith": true,
         "latin": "z",
         "latinshift": "Z",
-        "askaoza": "ટૃ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -355,7 +355,7 @@
         "outputwith": true,
         "latin": "c",
         "latinshift": "C",
-        "askaoza": "મ",
+        "askaoza": true,
         "language": "Є",
         "languageshift": "Є"
     },
@@ -363,7 +363,7 @@
         "outputwith": true,
         "latin": "v",
         "latinshift": "V",
-        "askaoza": "ળૃ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -371,7 +371,7 @@
         "outputwith": true,
         "latin": "b",
         "latinshift": "B",
-        "askaoza": "રૃ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -379,7 +379,7 @@
         "outputwith": true,
         "latin": "n",
         "latinshift": "N",
-        "askaoza": "પ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -387,7 +387,7 @@
         "outputwith": true,
         "latin": "m",
         "latinshift": "M",
-        "askaoza": "ઇ",
+        "askaoza": true,
         "language": "",
         "languageshift": ""
     },
@@ -395,7 +395,7 @@
         "outputwith": true,
         "latin": ",",
         "latinshift": "/",
-        "askaoza": null,
+        "askaoza": false,
         "language": "<",
         "languageshift": ""
     },
@@ -403,7 +403,7 @@
         "outputwith": true,
         "latin": ".",
         "latinshift": "?",
-        "askaoza": null,
+        "askaoza": false,
         "language": ">",
         "languageshift": ""
     },
@@ -411,7 +411,7 @@
         "outputwith": false,
         "latin": "LNG",
         "latinshift": "LNG",
-        "askaoza": null,
+        "askaoza": false,
         "language": "NXT",
         "languageshift": "NXT"
     },
@@ -419,7 +419,7 @@
         "outputwith": false,
         "latin": "SHIFT",
         "latinshift": "SHIFT",
-        "askaoza": null,
+        "askaoza": false,
         "language": "SHIFT",
         "languageshift": "SHIFT"
     },
@@ -427,7 +427,7 @@
         "outputwith": true,
         "latin": " ",
         "latinshift": " ",
-        "askaoza": null,
+        "askaoza": false,
         "language": " ",
         "languageshift": " "
     }

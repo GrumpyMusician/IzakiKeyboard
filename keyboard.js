@@ -18,17 +18,21 @@ const textbox = document.getElementById("textbox");
 const doublerule = ['ü', 'Ü', 'e', 'E', 'a', 'A', 'd', 'D', 'u', 'U', 'i', 'I', 'o', 'O', '[', ']'];
 
 let keyData = null;
+let askaozaData = null;
 
-fetch('keys.json')
-    .then(response => response.json())
-    .then(data => {
-        keyData = data;
-        keyUpdates();
-        latinmode.setAttribute("fill", "#86A788");
-    })
-    .catch(error => {
-        console.error('Error loading JSON file:', error);
-    });
+Promise.all([
+    fetch('keys.json').then(response => response.json()),
+    fetch('askaoza.json').then(response => response.json())
+])
+.then(([keys, askaoza]) => {
+    keyData = keys;
+    askaozaData = askaoza;
+    keyUpdates();
+    latinmode.setAttribute("fill", "#86A788");
+})
+.catch(error => {
+    console.error('Error loading JSON files:', error);
+});
 
 const debounce = (callback, delay) => {
     let debounceTimer;
@@ -88,8 +92,14 @@ function textboxupdate(event) {
         return;
     }
 
-    if (mode && keyData[event.code].askaoza !== null) {
-        chartoadd = keyData[event.code].askaoza;
+    if (mode && keyData[event.code].askaoza === true) {
+        try{
+            
+            chartoadd = askaozaData["characters"][textbox.value.charAt(textbox.selectionStart - 1)][keyData[event.code].latin];
+        }
+        catch (err){
+            chartoadd = askaozaData["characters"]["SPC"][keyData[event.code].latin];
+        }
     }
     else {
         chartoadd = upper
@@ -101,10 +111,7 @@ function textboxupdate(event) {
             : keyData[event.code].latin;
     }
 
-    if (
-        chartoadd === textbox.value.charAt(cursorPos - 1) &&
-        doublerule.includes(chartoadd)
-    ) {
+    if (chartoadd === textbox.value.charAt(cursorPos - 1) && doublerule.includes(chartoadd) && mode == false){
         chartoadd = upper
             ? keyData[event.code].languageshift
             : keyData[event.code].language;
@@ -115,17 +122,44 @@ function textboxupdate(event) {
     textbox.selectionStart = textbox.selectionEnd = textLeft.length + chartoadd.length;
 }
 
+function getLastGrapheme(){
+    let segmenter = new Intl.Segmenter("gu", { granularity: "grapheme" });
+    let segments = Array.from(segmenter.segment(textbox.value));
+    if (segments.length > 0) {
+        let grapheme = segments[segments.length - 1].segment;
+        return grapheme;
+    } else {
+        return;
+    }
+}
+
+function deleteLastGrapheme(text) {
+    if (!text) return "";
+
+    let segmenter = new Intl.Segmenter("gu", { granularity: "grapheme" });
+    let segments = Array.from(segmenter.segment(text));
+
+    if (segments.length === 0) return "";
+
+    let lastGrapheme = segments.pop().segment;
+    return text.slice(0, -lastGrapheme.length);
+}
+
 function keyUpdates() {
     if (!keyData) return;
-
     for (let key in keyData) {
         if (keyData.hasOwnProperty(key)) {
             let char;
             let upper = (shift && !caps) || (!shift && caps);
             let lng = lngleft || lngright;
 
-            if (mode && keyData[key].askaoza !== null) {
-                char = keyData[key].askaoza;
+            if (mode && keyData[key].askaoza) {
+                try{
+                    char = askaozaData["characters"][textbox.value.charAt(textbox.selectionStart - 1)][keyData[key].latin];
+                }
+                catch (err){
+                    char = askaozaData["characters"]["SPC"][keyData[key].latin];
+                }
                 document.getElementById(key).nextElementSibling.textContent = char;
             }
             else {
@@ -139,12 +173,20 @@ function keyUpdates() {
 
                 if (doublerule.includes(char)) {
                     document.getElementById(key).nextElementSibling.setAttribute('fill', '#FDFD96');
-                } else {
+                } 
+                // else if (mode){
+                //     try{
+                //         console.log(askaozaData["behaviors"][textbox.value.slice(0, textbox.selectionStart).slice(0, -1)][keyData[key].latin])
+                //     }
+                //     catch (err){
+                //         console.log ("womop womop")
+                //     }
+                //     document.getElementById(key).nextElementSibling.setAttribute('fill', '#FF748B');
+                // }
+                else {
                     document.getElementById(key).nextElementSibling.setAttribute('fill', 'white');
                 }
             }
-
-            //console.log("mode:" + mode + ", " + keyData[key].askaoza);
         }
     }
 }
