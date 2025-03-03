@@ -93,12 +93,16 @@ function textboxupdate(event) {
     }
 
     if (mode && keyData[event.code].askaoza === true) {
-        try{
-            
-            chartoadd = askaozaData["characters"][textbox.value.charAt(textbox.selectionStart - 1)][keyData[event.code].latin];
+        if (isExtraneous(textbox.value.charAt(textbox.selectionStart - 1))){
+            chartoadd = askaozaData["characters"]["૮"][keyData[event.code].latin]; 
         }
-        catch (err){
-            chartoadd = askaozaData["characters"]["SPC"][keyData[event.code].latin];
+        else {
+            try {
+                chartoadd = askaozaData["characters"][textbox.value.charAt(textbox.selectionStart - 1)][keyData[event.code].latin];
+            }
+            catch (err) {
+                chartoadd = askaozaData["characters"][getLastGrapheme()][keyData[event.code].latin];
+            }
         }
     }
     else {
@@ -122,29 +126,6 @@ function textboxupdate(event) {
     textbox.selectionStart = textbox.selectionEnd = textLeft.length + chartoadd.length;
 }
 
-function getLastGrapheme(){
-    let segmenter = new Intl.Segmenter("gu", { granularity: "grapheme" });
-    let segments = Array.from(segmenter.segment(textbox.value));
-    if (segments.length > 0) {
-        let grapheme = segments[segments.length - 1].segment;
-        return grapheme;
-    } else {
-        return;
-    }
-}
-
-function deleteLastGrapheme(text) {
-    if (!text) return "";
-
-    let segmenter = new Intl.Segmenter("gu", { granularity: "grapheme" });
-    let segments = Array.from(segmenter.segment(text));
-
-    if (segments.length === 0) return "";
-
-    let lastGrapheme = segments.pop().segment;
-    return text.slice(0, -lastGrapheme.length);
-}
-
 function keyUpdates() {
     if (!keyData) return;
     for (let key in keyData) {
@@ -152,13 +133,17 @@ function keyUpdates() {
             let char;
             let upper = (shift && !caps) || (!shift && caps);
             let lng = lngleft || lngright;
-
-            if (mode && keyData[key].askaoza) {
-                try{
-                    char = askaozaData["characters"][textbox.value.charAt(textbox.selectionStart - 1)][keyData[key].latin];
+            if (mode === true && keyData[key]["askaoza"]) {
+                if (isExtraneous(textbox.value.charAt(textbox.selectionStart - 1))){
+                    char = askaozaData["characters"]["૮"][keyData[key].latin]; 
                 }
-                catch (err){
-                    char = askaozaData["characters"]["SPC"][keyData[key].latin];
+                else {
+                    try {
+                        char = askaozaData["characters"][textbox.value.charAt(textbox.selectionStart - 1)][keyData[key].latin];
+                    }
+                    catch (err) {
+                        char = askaozaData["characters"][getLastGrapheme()][keyData[key].latin];
+                    }
                 }
                 document.getElementById(key).nextElementSibling.textContent = char;
             }
@@ -215,4 +200,32 @@ function statusUpdates(event) {
     }
 
     language.setAttribute("fill", lngleft || lngright ? "#86A788" : "");
+}
+
+function getLastGrapheme(){
+    let segmenter = new Intl.Segmenter("gu", { granularity: "grapheme" });
+    let segments = Array.from(segmenter.segment(textbox.value));
+    if (segments.length > 0) {
+        let grapheme = segments[segments.length - 1].segment;
+        return grapheme;
+    } else {
+        return;
+    }
+}
+
+function deleteLastGrapheme(text) {
+    if (!text) return "";
+
+    let segmenter = new Intl.Segmenter("gu", { granularity: "grapheme" });
+    let segments = Array.from(segmenter.segment(text));
+
+    if (segments.length === 0) return "";
+
+    let lastGrapheme = segments.pop().segment;
+    return text.slice(0, -lastGrapheme.length);
+}
+
+function isExtraneous(char) {
+    const charCode = char.charCodeAt(0);
+    return !(charCode >= 0x0A80 && charCode <= 0x0AFF && charCode != 0x0AEC);
 }
