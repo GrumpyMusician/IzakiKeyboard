@@ -92,7 +92,7 @@ function textboxupdate(event) {
         return;
     }
 
-    if (mode && keyData[event.code].askaoza === true) {
+    if (mode === true && keyData[event.code]["askaoza"]) {
         if (isExtraneous(textbox.value.charAt(textbox.selectionStart - 1))){
             chartoadd = askaozaData["characters"]["૮"][keyData[event.code].latin]; 
         }
@@ -105,6 +105,7 @@ function textboxupdate(event) {
             }
         }
     }
+
     else {
         chartoadd = upper
             ? lng
