@@ -20,6 +20,7 @@ const doublerule = ['ü', 'Ü', 'e', 'E', 'a', 'A', 'd', 'D', 'u', 'U', 'i', 'I'
 let keyData = null;
 let askaozaData = null;
 
+
 Promise.all([
     fetch('keys.json').then(response => response.json()),
     fetch('askaoza.json').then(response => response.json())
@@ -27,6 +28,7 @@ Promise.all([
 .then(([keys, askaoza]) => {
     keyData = keys;
     askaozaData = askaoza;
+    previousChars = Object.keys(askaozaData["characters"]);
     keyUpdates();
     latinmode.setAttribute("fill", "#86A788");
 })
@@ -93,7 +95,12 @@ function textboxupdate(event) {
     }
 
     if (mode === true && keyData[event.code]["askaoza"]) {
-        
+        let charBefore = getPrevChar(textLeft);
+        chartoadd = askaozaData["characters"][charBefore][keyData[event.code].latin];
+        //console.log(-(askaozaData["behaviors"][charBefore][keyData[event.code].latin]));
+        if (askaozaData["behaviors"][charBefore][keyData[event.code].latin] != 0){
+            textLeft = textLeft.slice(0, -(askaozaData["behaviors"][charBefore][keyData[event.code].latin]));
+        }
     }
 
     else {
@@ -119,38 +126,32 @@ function textboxupdate(event) {
 
 function keyUpdates() {
     if (!keyData) return;
+
     for (let key in keyData) {
         if (keyData.hasOwnProperty(key)) {
             let char;
             let upper = (shift && !caps) || (!shift && caps);
             let lng = lngleft || lngright;
             if (mode === true && keyData[key]["askaoza"]) {
-                
+                let charBefore = getPrevChar(textbox.value.slice(0, textbox.selectionStart));
+                char = askaozaData["characters"][charBefore][keyData[key].latin];
             }
+            
             else {
                 if (!upper) {
                     char = !lng ? keyData[key].latin : keyData[key].language;
                 } else {
                     char = !lng ? keyData[key].latinshift : keyData[key].languageshift;
                 }
+            }
 
-                document.getElementById(key).nextElementSibling.textContent = char;
+            document.getElementById(key).nextElementSibling.textContent = char;
 
-                if (doublerule.includes(char)) {
-                    document.getElementById(key).nextElementSibling.setAttribute('fill', '#FDFD96');
-                } 
-                // else if (mode){
-                //     try{
-                //         console.log(askaozaData["behaviors"][textbox.value.slice(0, textbox.selectionStart).slice(0, -1)][keyData[key].latin])
-                //     }
-                //     catch (err){
-                //         console.log ("womop womop")
-                //     }
-                //     document.getElementById(key).nextElementSibling.setAttribute('fill', '#FF748B');
-                // }
-                else {
-                    document.getElementById(key).nextElementSibling.setAttribute('fill', 'white');
-                }
+            if (doublerule.includes(char)) {
+                document.getElementById(key).nextElementSibling.setAttribute('fill', '#FDFD96');
+            }
+            else {
+                document.getElementById(key).nextElementSibling.setAttribute('fill', 'white');
             }
         }
     }
@@ -182,12 +183,11 @@ function statusUpdates(event) {
     language.setAttribute("fill", lngleft || lngright ? "#86A788" : "");
 }
 
-function getRelevantChar(key){
-
-}
-
-function isExtraneous(char) {
-    const charCode = char.charCodeAt(0);
-    console.log(char);
-    return !(charCode >= 0x0A80 && charCode <= 0x0AFF && charCode != 0x0AEC && charCode != 0x03B1);
+function getPrevChar(textleft){
+    for (i = 0; i < previousChars.length; i++){
+        if (textleft.endsWith(previousChars[i])){
+            return previousChars[i];
+        }
+    }
+    return previousChars[previousChars.length-1];
 }
