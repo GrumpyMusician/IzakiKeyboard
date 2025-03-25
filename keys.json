@@ -393,7 +393,7 @@
     },
     "Comma": {
         "outputwith": true,
-        "latin": ",",
+        "latin": "、",
         "latinshift": "/",
         "askaoza": false,
         "language": "<",
@@ -401,7 +401,7 @@
     },
     "Period": {
         "outputwith": true,
-        "latin": ".",
+        "latin": "。",
         "latinshift": "?",
         "askaoza": false,
         "language": ">",

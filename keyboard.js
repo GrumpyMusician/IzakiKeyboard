@@ -97,9 +97,9 @@ function textboxupdate(event) {
     if (mode === true && keyData[event.code]["askaoza"]) {
         let charBefore = getPrevChar(textLeft);
         chartoadd = askaozaData["characters"][charBefore][keyData[event.code].latin];
-        //console.log(-(askaozaData["behaviors"][charBefore][keyData[event.code].latin]));
         if (askaozaData["behaviors"][charBefore][keyData[event.code].latin] != 0){
             textLeft = textLeft.slice(0, -(askaozaData["behaviors"][charBefore][keyData[event.code].latin]));
+            console.log(charBefore);
         }
     }
 
@@ -117,6 +117,10 @@ function textboxupdate(event) {
         chartoadd = upper
             ? keyData[event.code].languageshift
             : keyData[event.code].language;
+        textLeft = textLeft.slice(0, -1);
+    }
+
+    if (getPrevChar(textLeft) === "あ"){
         textLeft = textLeft.slice(0, -1);
     }
 
