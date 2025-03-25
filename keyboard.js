@@ -56,7 +56,7 @@ const onkey = (event) => {
 
         if (isControlKey) return;
 
-        if (!["Tab", "Backspace", "Enter"].includes(event.key)) {
+        if (!["Tab", "Backspace", "Enter", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)) {
             event.preventDefault();
             debounce(() => textboxupdate(event), 10)();
         }
