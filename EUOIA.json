@@ -16472,8 +16472,10 @@
       "organization:Egalia": "",
       "organization:IC": "",
       "organization:TCC": "",
+      "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 50,
