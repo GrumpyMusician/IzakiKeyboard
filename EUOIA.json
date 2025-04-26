@@ -285,9 +285,11 @@
       "organization:Egalia": "",
       "organization:IC": "",
       "organization:TCC": "",
+      "organization:EUOIA": "member",
       "organizations": [
          "AN",
-         "ASUN"
+         "ASUN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 60,
@@ -440,7 +442,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -1822,7 +1825,6 @@
       "organization:Egalia": "",
       "organization:IC": "",
       "organization:TCC": "",
-      "organization:EUOIA": "member",
       "organizations": [
          "AN",
          "AC"
@@ -2240,7 +2242,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -4987,7 +4990,8 @@
       "organization:EUOIA": "member",
       "organizations": [
          "AN",
-         "ASUN"
+         "ASUN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 50,
@@ -5794,7 +5798,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -5876,7 +5881,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -6025,7 +6031,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -7121,7 +7128,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -7440,7 +7448,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 60,
@@ -11672,7 +11681,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -11976,7 +11986,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -13973,7 +13984,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 50,
@@ -17025,7 +17037,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 50,
@@ -18254,7 +18267,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -20258,7 +20272,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": "",
@@ -20662,7 +20677,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 50,
@@ -20953,7 +20969,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 50,
@@ -21761,7 +21778,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 50,
@@ -21867,7 +21885,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 50,
@@ -22136,7 +22155,6 @@
       "organization:Egalia": "",
       "organization:IC": "",
       "organization:TCC": "",
-      "organization:EUOIA": "member",
       "organizations": [
          "AN"
       ],
@@ -22727,7 +22745,8 @@
       "organization:TCC": "",
       "organization:EUOIA": "member",
       "organizations": [
-         "AN"
+         "AN",
+         "EUOIA"
       ],
       "power_supply": "other",
       "power_supply:frequency": 50,
