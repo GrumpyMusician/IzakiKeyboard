@@ -139,6 +139,10 @@ function keyUpdates() {
             if (mode === true && keyData[key]["askaoza"]) {
                 let charBefore = getPrevChar(textbox.value.slice(0, textbox.selectionStart));
                 char = askaozaData["characters"][charBefore][keyData[key].latin] + " 🢒 " + keyData[key].latin + "";
+
+                if (char === "  🢒  "){
+                    char = "";
+                }
             }
             
             else {
